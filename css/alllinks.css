@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.links-section{
+     width: 100%;
+}
+
+.rulebook {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
+.shortlist{
+    display: block;
+    text-align: center;
+    margin: 3%;
+}
+
+.shortlist p{
+    margin: 2%;
+    font-size: 15px;
+}
+
+.shortlist a:hover ,.rulebook a:hover{
+    transform: scale(1.04);
+}
+
+.btn {
+    position: relative;
+    text-align: center;
+  }
+  .btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(149, 236, 196, 0.4);
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+  .btn:hover:after {
+    width: 120%;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+.shortlist button ,.rulebook button{
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    border-style: hidden;
+    width: auto;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 17px;
+    /* transform : scale(1.05); */
+    box-shadow: 2px 20px 20px -22px #161616;
+    background-image: linear-gradient(#1f323f,#3e80a1);
+}
+
+
+@media screen  and (max-width:1000px){
+     
+  
+    .shortlist p{
+         font-size: 12px;
+         margin: 3%;
+    }
+  
+         
+.shortlist button ,.rulebook button{
+    width: auto;
+    border-radius: 10px;
+    padding: 13px;
+    margin: 13px;
+    font-size: 12px;
+
+}
+
+     
+}
